@@ -1,0 +1,13 @@
+@Cykloservis.API_HostAddress = http://localhost:5079
+
+### 1. Seznam všech zákazníků
+GET {{Cykloservis.API_HostAddress}}/api/customers
+Accept: application/json
+
+### 2. Detail existujícího zákazníka (ID 1)
+GET {{Cykloservis.API_HostAddress}}/api/customers/1
+Accept: application/json
+
+### 3. Neexistující zákazník (musí vrátit 404 Not Found)
+GET {{Cykloservis.API_HostAddress}}/api/customers/999
+Accept: application/json
